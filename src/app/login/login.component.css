@@ -1,0 +1,35 @@
+.page {
+    align-items: center;
+    flex-direction: column;
+    background: #F3D6DB;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.form {
+    margin-left: 30;
+    margin-right: 30;
+    flex-grow: 2;
+    vertical-align: middle;
+    width: 90%;
+}
+
+.input {
+    background-color: #F6F6F6;
+    border-radius: 15;
+    padding: 20;
+    placeholder-color: #C4C4C4;
+}
+
+.btn {
+    background-color: #7C4BCE;
+    color: white;
+    border-radius: 15;
+}
+
+.notuser {
+    color: #C4C4C4;
+}
+
+.btnsignup {
+    color: #7C4BCE;
+}

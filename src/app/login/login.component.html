@@ -1,0 +1,30 @@
+<ActionBar class="none" [disabled]="true">
+</ActionBar>
+
+<FlexboxLayout class="page">
+    <StackLayout>
+        <Image width="254" height="208" [nsRouterLink]="['/home']" class="m-t-20" src="~/app/img/logo.png">
+        </Image>
+    </StackLayout>
+    <StackLayout class="form">
+        <StackLayout class="input-field">
+            <TextField hint="Email" class="input" keyboardType="email" name="email" [(ngModel)]="user.email" autocorrect="false" autocapitalizationType="none"></TextField>
+        </StackLayout>
+
+        <StackLayout class="input-field">
+            <TextField secure="true" class="input" name="password" [(ngModel)]="user.password" hint="Password"></TextField>
+        </StackLayout>
+
+        <Button class="btn" text="Đăng Nhập" (tap)="login()">
+        </Button>
+        <FlexboxLayout justifyContent="center" class="m-t-10">
+            <Label text="Chưa có tài khoản ?" class="notuser" textWrap="true"></Label>
+        </FlexboxLayout>
+        <FlexboxLayout justifyContent="center">
+            <Label text="Đăng Ký" class="btnsignup " textWrap="true"></Label>
+        </FlexboxLayout>
+        <!-- <Label *ngIf="hasPasswordErrors()" class="eloha-font-semibold m-t-2 login-field-label color-danger font-size-md" row="2"></Label> -->
+
+    </StackLayout>
+
+</FlexboxLayout>
